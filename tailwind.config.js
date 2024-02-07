@@ -21,6 +21,7 @@ module.exports = {
     require("@tailwindcss/typography"), // use typography
      */
   ],
+  safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[browse-in]'],
   // This is to disable the opacity that genereates a lot of extra css classes
   corePlugins: {
     divideOpacity: false,
@@ -38,10 +39,18 @@ module.exports = {
         },
         */
     extend: {
-      /** This will extend the current "spacing" configuration
-            *  and add a -7 to all spacing options     */
-      spacing: {
-        'derek': '2rem',
+      animation: {
+        pingSize: 'pingSize 0.3s cubic-bezier(1, 1, 1, 1) 1',
+      },
+      keyframes:{
+        pingSize: {
+          '0%': { transform: 'scale(1)', opacity: '0.5' },
+          '50%': { transform: 'scale(1.09)', opacity: '0.75'},
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+    
+      },
+      spacing: { 
       },
 
     },

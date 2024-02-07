@@ -14,8 +14,12 @@
     <div class="bg-left h-screen w-1/4" style="background-color: #742a2a;">
       <div class="p-10 top-3/4 left-1/3">
       </div>
-      <div class="!visible hidden" id="collapseExample" data-te-collapse-item>
-        <div class="block bg-white top-1/2 left-1/3" style="width: 475px !important; height: 550px !important; margin-left: 375px; margin-top: 100px;  ">
+      <div class="!visible hidden animate-pingSize" id="collapseExample"  id="animate-click"
+      data-te-animation-init
+      data-te-animation-start="onClick"
+      data-te-animation-reset="true"
+      data-te-animation="[browse-in]">
+        <div class="block bg-white top-1/2 left-1/3 " style="width: 475px !important; height: 550px !important; margin-left: 375px; margin-top: 100px;  ">
 
           <button class="text-red-900" onclick="toggleVisibility()" type="button" data-te-collapse-init data-te-target="#collapseExample" aria-expanded="false"
             aria-controls="collapseExample" style="height: 40px; width: 40px; font-size: x-large; margin-left: 435px">
