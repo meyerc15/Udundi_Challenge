@@ -1,20 +1,21 @@
 {
   "name": "tailwind-example",
   "version": "0.3.1",
-  "description": "A tailwind starter package for rapid design prototyping for concretecms",
+  "description": "udundi programming",
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --output public",
     "build:profile": "cross-env NODE_ENV=production webpack --config webpack.config.js --profile --json > stats.json",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build:c5": "cross-env NODE_ENV=production webpack --config webpack.config.js --env c5",
     "watch": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch --progress",
     "dev": "cross-env NODE_ENV=development webpack serve  --config=webpack.config.js --hot"
+  
   },
   "keywords": [
     "tailwind",
