@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --output public",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "build:profile": "cross-env NODE_ENV=production webpack --config webpack.config.js --profile --json > stats.json",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
